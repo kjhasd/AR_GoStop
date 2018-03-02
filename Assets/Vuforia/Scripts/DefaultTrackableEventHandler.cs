@@ -84,7 +84,6 @@ namespace Vuforia
                 component.enabled = true;
             }
 
-            photonCanvas.SetActive(true);
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
         }
 
@@ -106,7 +105,6 @@ namespace Vuforia
                 component.enabled = false;
             }
 
-            photonCanvas.SetActive(false);
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
         }
 
