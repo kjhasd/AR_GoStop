@@ -12,6 +12,11 @@ public class StartGame : MonoBehaviour {
 	void Start () {
         pv = PhotonView.Get(this);
         txt = GetComponentInChildren<UILabel>();
+
+        if (PhotonNetwork.isMasterClient)
+        {
+            txt.text = "참가 중";
+        }
     }
 	
 	// Update is called once per frame
