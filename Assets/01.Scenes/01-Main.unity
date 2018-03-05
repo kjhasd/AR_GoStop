@@ -494,8 +494,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d528c435c50978438eae45c19240a8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cube: {fileID: 0}
-  position: {fileID: 1381815431}
 --- !u!114 &239454056
 MonoBehaviour:
   m_ObjectHideFlags: 0

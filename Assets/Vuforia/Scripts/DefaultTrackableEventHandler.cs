@@ -107,7 +107,11 @@ namespace Vuforia
                 component.enabled = false;
             }
 
-            photonCanvas.SetActive(false);
+            if(PhotonNetwork.connected == true)
+            {
+                photonCanvas.SetActive(false);
+            }
+          
 
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
         }
