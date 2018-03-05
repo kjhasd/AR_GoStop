@@ -69,7 +69,7 @@ public class PhotonInit : MonoBehaviour {
 
     IEnumerator MoveToGame()
     {
-        SceneManager.LoadScene("ReadyRoom");
+        SceneManager.LoadScene("02-ReadyRoom");
         PhotonNetwork.isMessageQueueRunning = true;
 
         yield return null;

@@ -26,7 +26,7 @@ public class StartGame : MonoBehaviour {
             if (isReady)
             {
                 // 마스터클라이언트 방입장
-                SceneManager.LoadScene("GameRoom");
+                SceneManager.LoadScene("04-GameRoom");
                 pv.RPC("GoGame", PhotonTargets.Others);
             }
         }
@@ -41,7 +41,7 @@ public class StartGame : MonoBehaviour {
     void GoGame()
     {
         //게스트 방입장
-        SceneManager.LoadScene("GameRoom");
+        SceneManager.LoadScene("04-GameRoom");
     }
 
     [PunRPC]
